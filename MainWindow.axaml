@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        MinWidth="470" MinHeight="250"
+        MaxWidth="470" MaxHeight="250"
+        Width="470" Height="250"
+        x:Class="CutreTienda_Avalonia.MainWindow"
+        Title="CutreTienda_Avalonia"
+        FontFamily="Monserrat"
+        CanResize="False">
+    <StackPanel
+        Margin="5"
+        Background="#fbdfa3">
+        
+        <DockPanel Margin="5">
+            <Menu VerticalAlignment="Top"
+                  Background="#ffffff">
+            
+                <MenuItem Header="_Archivo">
+                    <MenuItem Name="opSave" Header="_Guardar" />
+                    <MenuItem Name="opLoad" Header="_Abrir" />
+                    <MenuItem Name="opExit" Header="_Salir" />
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        
+        <DockPanel Margin="5"
+                   VerticalAlignment="Center">
+            <Label 
+                Margin="5"
+                Content="Tipo de Aparato"
+                VerticalAlignment="Center"/>
+            <ComboBox
+                Margin="10"
+                HorizontalAlignment="Right"
+                Name="cbAparato"
+                SelectedIndex="0"
+                Width="195">
+                <ComboBoxItem Content="Radio"></ComboBoxItem>
+                <ComboBoxItem Content="Televisor"></ComboBoxItem>
+                <ComboBoxItem Content="Reproductor de DVD"></ComboBoxItem>
+                <ComboBoxItem Content="Adaptador de TDT"></ComboBoxItem>
+            </ComboBox>
+        </DockPanel>
+        
+        <Button
+            Name="btAdd"
+            Content="Agregar Reparacion"
+            Margin="20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Stretch"
+            FontWeight="Bold"
+            FontSize="17"
+            Background="#a3bffb">
+            
+        </Button>
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,89 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        MinWidth="470" MinHeight="500"
+        MaxWidth="470" MaxHeight="500"
+        Width="470" Height="500"
+        x:Class="CutreTienda_Avalonia.CreaDVD"
+        Title="CutreTienda - DVD"
+        FontFamily="Monserrat">
+    <StackPanel Margin="5"
+                Background="#fbdfa3">
+        <Label Content="Datos de DVD" 
+               HorizontalAlignment="Center"/>
+            
+        <Label Content="Numero de serie" />
+        <TextBox Name="edNumSerie" TextAlignment="Center" />
+            
+        <Label Content="Modelo" />
+        <TextBox Name="modelo" TextAlignment="Center" />
+        
+        <CheckBox 
+            Name = "cbGraba"
+            Content="¿Graba?"/>
+        
+        <CheckBox 
+            Name = "cbBlueRay"
+            Content="¿BlueRay?"/>
+            
+        <DockPanel
+            Margin="5">
+            <Label
+                Content="Duracion de la reparación:"
+                HorizontalAlignment="Center">
+                            
+            </Label>
+        </DockPanel>
+        <DockPanel
+            Margin="5">
+            <TextBox 
+                Name="edHoras" 
+                Watermark="Horas" 
+                Width="150"
+                HorizontalAlignment="Left"
+                TextAlignment="Center"/>
+                    
+            <TextBox 
+                Name="edMinutos" 
+                Watermark="Minutos" 
+                Width="150"
+                HorizontalAlignment="Right"
+                TextAlignment="Center"/>
+        </DockPanel>
+            
+        <DockPanel
+            Margin="5">
+            <Label
+                Content="Tiempo de grabación:"
+                HorizontalAlignment="Center">
+                            
+            </Label>
+        </DockPanel>
+        <DockPanel
+            Margin="5">
+            <TextBox 
+                Name="horasG" 
+                Watermark="Horas" 
+                Width="150"
+                HorizontalAlignment="Left"
+                TextAlignment="Center"/>
+                    
+            <TextBox 
+                Name="minutosG" 
+                Watermark="Minutos" 
+                Width="150"
+                HorizontalAlignment="Right"
+                TextAlignment="Center"/>
+        </DockPanel>
+            
+        <Button Name="aceptar"
+                Content="Insertar Datos"
+                Margin="5"
+                HorizontalAlignment="Center"
+                FontWeight="Bold"
+                Background="#a3bffb"/>
+            
+    </StackPanel>
+</Window>

@@ -1,0 +1,94 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        MinWidth="470" MinHeight="500"
+        MaxWidth="470" MaxHeight="500"
+        Width="470" Height="500"
+        x:Class="CutreTienda_Avalonia.CreaRadio"
+        Title="CutreTienda - Radio"
+        FontFamily="Monserrat">
+        
+        <StackPanel Margin="5"
+                    Background="#fbdfa3">
+            <Label 
+                    Content="Introduzca los datos de la Radio reparada" 
+                    HorizontalAlignment="Center"/>
+            <DockPanel
+                    Margin="5">
+                    <Label 
+                            Content="Numero de serie:"/>
+                    <TextBox 
+                            Name="edNumSerie" 
+                            TextAlignment="Center" 
+                            Width="200"
+                            HorizontalAlignment="Right"/>
+            </DockPanel>
+
+
+            <DockPanel
+                    Margin="5">
+                    <Label 
+                            Content="Modelo:" 
+                            Margin="5"/>
+                    <TextBox 
+                            Name="edModelo" 
+                            TextAlignment="Center" 
+                            Width="200"
+                            HorizontalAlignment="Right"/>
+            </DockPanel>
+
+            <DockPanel
+                    Margin="5">
+                    <Label
+                            Content="Duracion de la reparación:"
+                            HorizontalAlignment="Center">
+                            
+                    </Label>
+            </DockPanel>
+            <DockPanel
+                    Margin="5">
+                    <TextBox 
+                            Name="edHoras" 
+                            Watermark="Horas" 
+                            Width="150"
+                            HorizontalAlignment="Left"
+                            TextAlignment="Center"/>
+                    
+                    <TextBox 
+                            Name="edMinutos" 
+                            Watermark="Minutos" 
+                            Width="150"
+                            HorizontalAlignment="Right"
+                            TextAlignment="Center"/>
+            </DockPanel>
+
+            <DockPanel
+                    Margin="5"
+                    HorizontalAlignment="Center">
+                    <Label 
+                            HorizontalAlignment="Center"
+                            Content="Banda" 
+                            VerticalAlignment="Center"/>
+                    <ComboBox
+                            Name="edBanda"
+                            SelectedIndex="0"
+                            Margin="30"
+                            HorizontalAlignment="Right">
+
+                            <ComboBoxItem Content="AM" />
+                            <ComboBoxItem Content="FM" />
+                            <ComboBoxItem Content="Ambas" />
+                    </ComboBox>
+            </DockPanel>
+            
+            <Button 
+                    Name="btAdd"
+                    Content="Insertar Datos"
+                    HorizontalAlignment="Center" 
+                    FontWeight="Bold"
+                    Background="#a3bffb"/>
+            
+        </StackPanel>
+</Window>
